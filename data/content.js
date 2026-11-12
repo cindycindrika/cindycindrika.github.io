@@ -19,17 +19,17 @@ window.SITE = {
     role: "Civil Structural Engineer",
     tagline: "Industrial Steel & Concrete Structures  /  Seismic Evaluation & Strengthening  /  Foundations",
     location: "Surabaya, Indonesia",
-    photo: "images/profile.jpg",            // ISI: ganti dengan foto sendiri (rasio 4:5, min. 800 x 1000 px)
+    photo: "images/Cindrika02118.jpg",            // ISI: ganti dengan foto sendiri (rasio 4:5, min. 800 x 1000 px)
     heroImage: "images/projects/highrise-malang/01-3d-frame.jpg",
     email: "cindycindrika@gmail.com",
     phone: "",                              // ISI (opsional): kosongkan bila tidak ingin nomor tampil di internet
     linkedin: "https://linkedin.com/in/cindrika",
-    github: "",                             // ISI (opsional)
-    instagram: "",                          // ISI (opsional)
-    cvFile: "",                             // ISI: mis. "files/CV_Cindrika_Dwi_Pramudita.pdf" setelah PDF ditaruh di folder files/
+    github: "https://github.com/cindycindrika",                             // ISI (opsional)
+    instagram: "https://instagram.com/cindycindrika",                          // ISI (opsional)
+    cvFile: "https://drive.google.com/drive/folders/1vPquKz5HTPZjRsznpA18ZKMG-t7m5kFk?usp=drive_link",                             // ISI: mis. "files/CV_Cindrika_Dwi_Pramudita.pdf" setelah PDF ditaruh di folder files/
     supportingDocs: "https://drive.google.com/drive/folders/1p4bm-Hf4gqD3ieiyAsyF3UH4AA-3F-gf?usp=drive_link",
 
-    intro: "I design and check steel and reinforced concrete structures for industrial clients at PT Citra Karsa Dinamika, an EPCC contractor in Cikarang. My work runs from the ETABS model to the calculation report: buildings, pipe and cable bridges, tanks, equipment structures, and their foundations.",
+    intro: "I am a Civil and Structure Design Engineer, currently for industrial clients at PT Citra Karsa Dinamika, an EPCC contractor in Cikarang. My work runs from the ETABS model to the calculation report: buildings, pipe and cable bridges, tanks, equipment structures, and their foundations.",
 
     about: [
       "I am a Cum Laude graduate of Applied Civil Engineering at Institut Teknologi Sepuluh Nopember (ITS) Surabaya, specializing in structural engineering. Since September 2026 I have worked as a Civil Structural Design Engineer at PT Citra Karsa Dinamika (CKD), where I design structures for active tenders and purchase orders, from modelling to reporting, for review by the engineering lead and the owner.",
@@ -46,7 +46,7 @@ window.SITE = {
     ],
 
     // id project yang ditampilkan di halaman depan (urut)
-    featured: ["safran-batik", "hospital-strengthening", "highrise-malang", "lng-jetty", "arch-bridge", "wtp-sei-mangkei"]
+    featured: ["safran-batik", "hospital-strengthening", "highrise-malang", "lng-jetty", "arch-bridge", "underground-wtp"]
   },
 
   /* ---------- PROJECT ----------
@@ -60,14 +60,13 @@ window.SITE = {
     {
       id: "safran-batik",
       title: "Batik Project: Building 2 Strengthening, Hazardous Building and Utility Cable Bridge",
-      category: "Professional",
+      category: "Design and Build Project",
       client: "Safran Electronics & Defense",
       location: "Purwakarta, Indonesia",
       period: "Sep 2026 – Present",
       role: "Civil Structural Design Engineer, PT Citra Karsa Dinamika",
       summary: "Four steel structures for an IDR 131 billion design-and-build project: strengthening of an existing two-level warehouse for upgraded loads, a new hazardous-material building, a two-tier utility cable bridge, and a connecting roof canopy.",
       facts: [
-        ["Contract", "IDR 131 billion, design and build"],
         ["Building 2", "~3,500 m², two-level steel warehouse"],
         ["Hazardous Building", "10 × 10 m, 4.4 m ridge"],
         ["Cable bridge", "3 spans: 12.0, 6.5, 6.2 m; 6.25 m high"],
@@ -87,12 +86,9 @@ window.SITE = {
     },
 
     {
-      id: "wtp-sei-mangkei",
+      id: "underground-wtp",
       title: "Underground Water Treatment Plant Tank",
-      category: "Professional",
-      client: "PT Unilever Oleochemical Indonesia",
-      location: "Sei Mangkei, North Sumatra",
-      period: "2026",
+      category: "Tender Submission",
       role: "Civil Structural Design Engineer, PT Citra Karsa Dinamika",
       summary: "A reinforced concrete water treatment tank, partly below ground, supported on bored piles with lateral soil springs.",
       facts: [
@@ -113,10 +109,7 @@ window.SITE = {
     {
       id: "goodyear-boiler-house",
       title: "New Boiler House",
-      category: "Professional",
-      client: "PT Goodyear Indonesia",
-      location: "Bogor, Indonesia",
-      period: "2026",
+      category: "Tender Submission",
       role: "Civil Structural Design Engineer, PT Citra Karsa Dinamika",
       summary: "A new boiler house for a Thermax CPF 240 boiler with an electrostatic precipitator and stack, built against an existing building and sharing six of its columns.",
       facts: [
@@ -137,10 +130,7 @@ window.SITE = {
     {
       id: "kdf-building-47",
       title: "KDF Building 47 Machine Room Structure",
-      category: "Professional",
-      client: "PT BAT Indonesia",
-      location: "Malang, Indonesia",
-      period: "2026",
+      category: "Tender Submission",
       role: "Civil Structural Design Engineer, PT Citra Karsa Dinamika",
       summary: "Renovation of a steel machine room, with two roof framing alternatives compared before selection.",
       facts: [
@@ -160,10 +150,7 @@ window.SITE = {
     {
       id: "beiersdorf-cargo-lift",
       title: "Cargo Lift Platform and Lift Pit",
-      category: "Professional",
-      client: "PT Beiersdorf Indonesia",
-      location: "Malang, Indonesia",
-      period: "2026",
+      category: "Tender Submission",
       role: "Civil Structural Design Engineer, PT Citra Karsa Dinamika",
       summary: "A three-level steel access platform for a cargo lift and its reinforced concrete pit, for a skin-care plant.",
       facts: [
@@ -183,10 +170,7 @@ window.SITE = {
     {
       id: "bonecom-warehouse",
       title: "Warehouse Expansion with Overhead Cranes",
-      category: "Professional",
-      client: "PT Bonecom Tricom",
-      location: "Cikarang Barat, Bekasi",
-      period: "2026",
+      category: "Tender Submission",
       role: "Civil Structural Design Engineer, PT Citra Karsa Dinamika",
       summary: "A steel factory extension with a canopy, served by two overhead cranes, next to an existing 8,082 m² factory.",
       facts: [
