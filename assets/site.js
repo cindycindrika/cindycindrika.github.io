@@ -52,6 +52,14 @@
       return '<figure><a class="zoom" href="' + esc(i.src) + '"><img src="' + esc(i.src) + '" alt="' + esc(i.caption || '') + '"></a>' + (ok(i.caption) ? '<figcaption>' + esc(i.caption) + '</figcaption>' : '') + '</figure>';
     }).join('') + '</div>';
   }
+  // foto bukti kecil di bawah tiap entri (awards, sertifikasi, organisasi, pengalaman, pendidikan)
+  function proof(x) {
+    var arr = ((x && x.images) || []).filter(function (i) { return i && ok(i.src); });
+    if (!arr.length) return '';
+    return '<div class="proof">' + arr.map(function (i) {
+      return '<a class="zoom" href="' + esc(i.src) + '"><img src="' + esc(i.src) + '" alt="' + esc(i.caption || '') + '" loading="lazy"></a>';
+    }).join('') + '</div>';
+  }
   function head(eyebrow, title, lead) {
     return '<section class="page-head"><div class="wrap"><p class="eyebrow light">' + esc(eyebrow) + '</p><h1>' + esc(title) + '</h1>' + (lead ? '<p class="lead">' + esc(lead) + '</p>' : '') + '</div></section>';
   }
@@ -64,18 +72,27 @@
   }
   function eduBlock() {
     return rows(S.education, function (e) {
-      return '<article class="row"><div class="when">' + esc(e.period) + '<br><span>' + esc(e.location) + '</span></div><div><h3>' + esc(e.school) + '</h3><p class="sub">' + esc(e.degree) + '</p>' + list(e.points) + '</div></article>';
+      return '<article class="row"><div class="when">' + esc(e.period) + '<br><span>' + esc(e.location) + '</span></div><div><h3>' + esc(e.school) + '</h3><p class="sub">' + esc(e.degree) + '</p>' + list(e.points) + proof(e) + '</div></article>';
     });
   }
   function expBlock() {
     return rows(S.experience, function (e) {
       var pr = (e.projectIds || []).map(byId).filter(Boolean);
       return '<article class="row"><div class="when">' + (ok(e.period) ? esc(e.period) + '<br>' : '') + '<span>' + esc(e.location) + '</span></div><div><h3>' + esc(e.title) + '</h3><p class="sub">' + esc(e.org) + '</p>' + list(e.points) +
-        (pr.length ? '<p class="linkline">Projects: ' + pr.map(function (p) { return '<a href="project.html?id=' + p.id + '">' + esc(p.title) + '</a>'; }).join('<span class="sep"> / </span>') + '</p>' : '') + '</div></article>';
+        (pr.length ? '<p class="linkline">Projects: ' + pr.map(function (p) { return '<a href="project.html?id=' + p.id + '">' + esc(p.title) + '</a>'; }).join('<span class="sep"> / </span>') + '</p>' : '') + proof(e) + '</div></article>';
     });
   }
   function simpleRows(arr, a, b, c) {
-    return rows(arr, function (x) { return '<article class="row slim"><div class="when">' + (ok(x[c]) ? esc(x[c]) : '') + '</div><div><h3>' + esc(x[a]) + '</h3>' + (ok(x[b]) ? '<p class="sub">' + esc(x[b]) + '</p>' : '') + (ok(x.detail) && b !== 'detail' ? '<p>' + esc(x.detail) + '</p>' : '') + '</div></article>'; });
+    return rows(arr, function (x) { return '<article class="row slim"><div class="when">' + (ok(x[c]) ? esc(x[c]) : '') + '</div><div><h3>' + esc(x[a]) + '</h3>' + (ok(x[b]) ? '<p class="sub">' + esc(x[b]) + '</p>' : '') + (ok(x.detail) && b !== 'detail' ? '<p>' + esc(x.detail) + '</p>' : '') + proof(x) + '</div></article>'; });
+  }
+
+  // 2-3 foto di halaman About, di bawah tombol CV & Contact
+  function aboutPhotos() {
+    var arr = (P.aboutPhotos || []).filter(function (i) { return i && ok(i.src); });
+    if (!arr.length) return '';
+    return '<div class="about-gallery">' + arr.map(function (i) {
+      return '<figure><a class="zoom" href="' + esc(i.src) + '"><img src="' + esc(i.src) + '" alt="' + esc(i.caption || '') + '"></a>' + (ok(i.caption) ? '<figcaption>' + esc(i.caption) + '</figcaption>' : '') + '</figure>';
+    }).join('') + '</div>';
   }
 
   /* ---------- halaman ---------- */
@@ -98,7 +115,7 @@
     html += head('About', P.name, P.role + '  /  ' + P.location);
     html += '<section class="sec"><div class="wrap about-grid"><div class="about-photo"><div class="ph-fallback">' + esc(P.initials) + '</div><img src="' + esc(P.photo) + '" alt="' + esc(P.name) + '" onerror="this.remove()"></div><div class="prose">' +
       P.about.map(function (t) { return '<p>' + esc(t) + '</p>'; }).join('') +
-      '<p class="actions"><a class="btn dark" href="cv.html">Curriculum vitae</a><a class="btn line" href="#contact">Contact</a></p></div></div></section>';
+      '<p class="actions"><a class="btn dark" href="cv.html">Curriculum vitae</a><a class="btn line" href="#contact">Contact</a></p>' + aboutPhotos() + '</div></div></section>';
     html += sec('Education', '', eduBlock(), 'tint');
     html += sec('Expertise', '', skillsBlock());
     html += sec('Awards', '', simpleRows(S.awards, 'title', 'detail', 'year'), 'tint');
