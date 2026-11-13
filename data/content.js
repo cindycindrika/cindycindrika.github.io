@@ -19,7 +19,7 @@ window.SITE = {
     role: "Civil Structural Engineer",
     tagline: "Industrial Steel & Concrete Structures  /  Seismic Evaluation & Strengthening  /  Foundations",
     location: "Surabaya, Indonesia",
-    photo: "images/Cindrika02118.jpg",            // ISI: ganti dengan foto sendiri (rasio 4:5, min. 800 x 1000 px)
+    photo: "images/Cindrika02118.JPG",            // huruf besar/kecil nama file harus sama persis (.JPG ≠ .jpg)
     heroImage: "images/projects/highrise-malang/01-3d-frame.jpg",
     email: "cindycindrika@gmail.com",
     phone: "",                              // ISI (opsional): kosongkan bila tidak ingin nomor tampil di internet
@@ -27,6 +27,13 @@ window.SITE = {
     github: "https://github.com/cindycindrika",                             // ISI (opsional)
     instagram: "https://instagram.com/cindycindrika",                          // ISI (opsional)
     cvFile: "https://drive.google.com/drive/folders/1vPquKz5HTPZjRsznpA18ZKMG-t7m5kFk?usp=drive_link",                             // ISI: mis. "files/CV_Cindrika_Dwi_Pramudita.pdf" setelah PDF ditaruh di folder files/
+    // 2-3 foto di halaman About, di bawah tombol Curriculum vitae & Contact. Simpan di folder images/about/
+    aboutPhotos: [
+      { src: "ISI: images/about/foto1.jpg", caption: "" },
+      { src: "ISI: images/about/foto2.jpg", caption: "" },
+      { src: "ISI: images/about/foto3.jpg", caption: "" }
+    ],
+
     supportingDocs: "https://drive.google.com/drive/folders/1p4bm-Hf4gqD3ieiyAsyF3UH4AA-3F-gf?usp=drive_link",
 
     intro: "I am a Civil and Structure Design Engineer, currently for industrial clients at PT Citra Karsa Dinamika, an EPCC contractor in Cikarang. My work runs from the ETABS model to the calculation report: buildings, pipe and cable bridges, tanks, equipment structures, and their foundations.",
@@ -613,27 +620,32 @@ window.SITE = {
 
   /* ---------- PENGHARGAAN ---------- */
   awards: [
-    { title: "3rd Place Most Outstanding Student ITS", detail: "University scale", year: "2025" },
-    { title: "IISMA Awardee", detail: "Full exchange scholarship to the University of Missouri-Kansas City; 2,300 awardees from 15,000+ applicants", year: "2024" },
-    { title: "Scopus-indexed publication", detail: "IOP Conference Series: Earth and Environmental Science", year: "2024" },
-    { title: "2nd Place, KSN-K Informatics", detail: "National Science Competition, district level", year: "2022" },
-    { title: "5th Place, KSM Informatics", detail: "", year: "2021" }
+    { title: "3rd Place Most Outstanding Student ITS", detail: "University scale", year: "2025", images: [] },
+    { title: "IISMA Awardee", detail: "Full exchange scholarship to the University of Missouri-Kansas City; 2,300 awardees from 15,000+ applicants", year: "2024", images: [] },
+    { title: "Scopus-indexed publication", detail: "IOP Conference Series: Earth and Environmental Science", year: "2024", images: [] },
+    { title: "2nd Place, KSN-K Informatics", detail: "National Science Competition, district level", year: "2022", images: [] },
+    { title: "5th Place, KSM Informatics", detail: "", year: "2021", images: [] }
   ],
+
+  /* Foto bukti: isi images dengan 1-3 foto per entri, mis.
+     images: [{ src: "images/proof/toeic.jpg" }]
+     Simpan fotonya di folder images/proof/. Berlaku juga untuk experience dan education.
+     Entri dengan images: [] tidak menampilkan foto. */
 
   /* ---------- SERTIFIKASI ---------- */
   certifications: [
-    { title: "SKK BIM Coordinator, Level 6", detail: "Badan Nasional Sertifikasi Profesi (BNSP)" },
-    { title: "TOEIC 785 (B2)", detail: "ETS" },
-    { title: "Duolingo English Test 120 (B2)", detail: "Duolingo" }
+    { title: "SKK BIM Coordinator, Level 6", detail: "Badan Nasional Sertifikasi Profesi (BNSP)", images: [] },
+    { title: "TOEIC 785 (B2)", detail: "ETS", images: [] },
+    { title: "Duolingo English Test 120 (B2)", detail: "Duolingo", images: [] }
   ],
 
   /* ---------- ORGANISASI ---------- */
   organizations: [
-    { title: "Social Media Staff", org: "Vokasi ITS", period: "From Jan 2024", detail: "" },
-    { title: "English Teacher", org: "TEFL ITS", period: "ISI: periode", detail: "Taught 9 classes of about 10 students each." },
-    { title: "Member", org: "ITS Robotics", period: "ISI: periode", detail: "" },
-    { title: "PIC Line Tracer, Robot in Action", org: "ITS Expo", period: "ISI: tahun", detail: "" },
-    { title: "Event Staff", org: "Vondasi 2023", period: "2023", detail: "" }
+    { title: "Social Media Staff", org: "Vokasi ITS", period: "From Jan 2024", detail: "", images: [] },
+    { title: "English Teacher", org: "TEFL ITS", period: "ISI: periode", detail: "Taught 9 classes of about 10 students each.", images: [] },
+    { title: "Member", org: "ITS Robotics", period: "ISI: periode", detail: "", images: [] },
+    { title: "PIC Line Tracer, Robot in Action", org: "ITS Expo", period: "ISI: tahun", detail: "", images: [] },
+    { title: "Event Staff", org: "Vondasi 2023", period: "2023", detail: "", images: [] }
   ],
 
   languages: [
