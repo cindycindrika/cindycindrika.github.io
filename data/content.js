@@ -370,14 +370,15 @@ window.SITE = {
 
     {
       id: "wika-gospier-jetty",
-      title: "Gospier Jetty Port Project",
+      title: "Gospier Jetty Port Project, Pertamina Patra Niaga",
       category: "Internship",
       client: "PT Wijaya Karya (WIKA), EPCC Division",
       location: "Surabaya, Indonesia",
       period: "Jan 2025 – Feb 2025",
       role: "Civil Structure Engineer Intern",
-      summary: "An IDR 577 billion port project with five structures: trestle, catwalk, mooring dolphin, breasting dolphin, and shelter.",
+      summary: "An IDR 577 billion port project for Pertamina Patra Niaga with five structures: trestle, catwalk, mooring dolphin, breasting dolphin, and shelter.",
       facts: [
+        ["Owner", "Pertamina Patra Niaga"],
         ["Project value", "IDR 577 billion"],
         ["Structures", "Trestle, catwalk, mooring dolphin, breasting dolphin, shelter"],
         ["Duration", "8 weeks"]
@@ -398,7 +399,7 @@ window.SITE = {
       client: "PT Studio Mineral Batubara",
       location: "Yogyakarta, Indonesia",
       period: "Jun 2025 – Aug 2025",
-      role: "Geotechnical (Mining) Engineer Intern",
+      role: "Geotechnical Engineer Intern",
       summary: "An independent study of the Panel 1 disposal area of a coal mine using the empirical WSRHC method, carried from data collection through analysis and reporting.",
       facts: [
         ["Disposal volume", "335 million m³ LCM / 268 million m³ BCM"],
@@ -538,7 +539,7 @@ window.SITE = {
       projectIds: ["safran-batik", "wtp-sei-mangkei", "goodyear-boiler-house", "kdf-building-47", "beiersdorf-cargo-lift", "bonecom-warehouse"]
     },
     {
-      title: "Geotechnical (Mining) Engineer Intern",
+      title: "Geotechnical Engineer Intern",
       org: "PT Studio Mineral Batubara, Mining Consultancy",
       location: "Yogyakarta, Indonesia",
       period: "Jun 2025 – Aug 2025",
@@ -554,7 +555,7 @@ window.SITE = {
       location: "Surabaya, Indonesia",
       period: "Jan 2025 – Feb 2025",
       points: [
-        "Verified sub- and upper-structure calculations for 5 port structures on the IDR 577 billion Gospier Jetty project.",
+        "Verified sub- and upper-structure calculations for 5 port structures on the IDR 577 billion Gospier Jetty project for Pertamina Patra Niaga.",
         "Turned raw soil investigation data into daily geotechnical reports over 8 weeks.",
         "Authored the piling work method statement."
       ],
@@ -642,9 +643,9 @@ window.SITE = {
   /* ---------- ORGANISASI ---------- */
   organizations: [
     { title: "Social Media Staff", org: "Vokasi ITS", period: "From Jan 2024", detail: "", images: [] },
-    { title: "English Teacher", org: "TEFL ITS", period: "ISI: periode", detail: "Taught 9 classes of about 10 students each.", images: [] },
-    { title: "Member", org: "ITS Robotics", period: "ISI: periode", detail: "", images: [] },
-    { title: "PIC Line Tracer, Robot in Action", org: "ITS Expo", period: "ISI: tahun", detail: "", images: [] },
+    { title: "English Teacher", org: "TEFL ITS", period: "Sep 2023 – Dec 2023", detail: "Taught 9 classes of about 10 students each.", images: [] },
+    { title: "Vice Coordinator, Robotika Mengajar Division", org: "ITS Robotics", period: "Apr 2024 – Aug 2025", detail: "Staff of Robotika Mengajar from Apr 2023; speaker and teaching assistant at robotics classes and workshops.", images: [] },
+    { title: "PIC Line Tracer, Robot in Action", org: "ITS Expo", period: "2023", detail: "", images: [] },
     { title: "Event Staff", org: "Vondasi 2023", period: "2023", detail: "", images: [] }
   ],
 
