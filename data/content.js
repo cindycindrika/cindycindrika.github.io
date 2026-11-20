@@ -410,7 +410,9 @@ window.SITE = {
         "Authored the piling work method statement used to standardize execution on site."
       ],
       tools: [],
-      images: []
+      images: [   
+        { src: "images/image.png", caption: "Field Documentation" }
+      ]
     },
 
     {
