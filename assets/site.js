@@ -86,13 +86,52 @@
     return rows(arr, function (x) { return '<article class="row slim"><div class="when">' + (ok(x[c]) ? esc(x[c]) : '') + '</div><div><h3>' + esc(x[a]) + '</h3>' + (ok(x[b]) ? '<p class="sub">' + esc(x[b]) + '</p>' : '') + (ok(x.detail) && b !== 'detail' ? '<p>' + esc(x.detail) + '</p>' : '') + proof(x) + '</div></article>'; });
   }
 
-  // 2-3 foto di halaman About, di bawah tombol CV & Contact
-  function aboutPhotos() {
-    var arr = (P.aboutPhotos || []).filter(function (i) { return i && ok(i.src); });
-    if (!arr.length) return '';
-    return '<div class="about-gallery">' + arr.map(function (i) {
-      return '<figure><a class="zoom" href="' + esc(i.src) + '"><img src="' + esc(i.src) + '" alt="' + esc(i.caption || '') + '"></a>' + (ok(i.caption) ? '<figcaption>' + esc(i.caption) + '</figcaption>' : '') + '</figure>';
-    }).join('') + '</div>';
+  // Slideshow foto (Home & About): foto profil + semua aboutPhotos, ganti otomatis tiap 3 detik
+  function slidePhotos() {
+    var arr = [{ src: P.photo, caption: '' }].concat(P.aboutPhotos || []);
+    return arr.filter(function (i) { return i && ok(i.src); });
+  }
+  function slider(cls) {
+    var arr = slidePhotos();
+    var h = '<div class="' + cls + ' slider" data-n="' + arr.length + '"><div class="ph-fallback">' + esc(P.initials) + '</div>';
+    arr.forEach(function (i, k) {
+      h += '<figure class="slide' + (k === 0 ? ' on' : '') + '"><img class="bg" src="' + esc(i.src) + '" alt="" aria-hidden="true"><img class="fg" src="' + esc(i.src) + '" alt="' + esc(i.caption || P.name) + '">' +
+        (ok(i.caption) ? '<figcaption>' + esc(i.caption) + '</figcaption>' : '') + '</figure>';
+    });
+    if (arr.length > 1) {
+      h += '<button class="sl-nav prev" aria-label="Previous photo">&#8249;</button><button class="sl-nav next" aria-label="Next photo">&#8250;</button><div class="sl-dots">';
+      arr.forEach(function (i, k) { h += '<button' + (k === 0 ? ' class="on"' : '') + ' aria-label="Photo ' + (k + 1) + '"></button>'; });
+      h += '</div>';
+    }
+    return h + '</div>';
+  }
+  function initSliders() {
+    Array.prototype.forEach.call(document.querySelectorAll('.slider'), function (el) {
+      var slides = el.querySelectorAll('.slide'), dots = el.querySelectorAll('.sl-dots button'), n = slides.length, cur = 0, timer = null;
+      if (n < 2) return;
+      function go(k) {
+        k = (k + n) % n;
+        slides[cur].classList.remove('on'); if (dots[cur]) dots[cur].classList.remove('on');
+        cur = k;
+        slides[cur].classList.add('on'); if (dots[cur]) dots[cur].classList.add('on');
+      }
+      function start() { stop(); timer = setInterval(function () { go(cur + 1); }, 3000); }
+      function stop() { if (timer) clearInterval(timer); timer = null; }
+      el.querySelector('.prev').addEventListener('click', function () { go(cur - 1); start(); });
+      el.querySelector('.next').addEventListener('click', function () { go(cur + 1); start(); });
+      Array.prototype.forEach.call(dots, function (d, k) { d.addEventListener('click', function () { go(k); start(); }); });
+      el.addEventListener('mouseenter', stop); el.addEventListener('mouseleave', start);
+      var x0 = null;
+      el.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; stop(); }, { passive: true });
+      el.addEventListener('touchend', function (e) {
+        if (x0 !== null) { var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) go(dx < 0 ? cur + 1 : cur - 1); }
+        x0 = null; start();
+      });
+      Array.prototype.forEach.call(el.querySelectorAll('img.fg'), function (im) {
+        im.addEventListener('error', function () { var f = im.parentNode; if (f && f.parentNode) f.style.display = 'none'; });
+      });
+      start();
+    });
   }
 
   /* ---------- halaman ---------- */
@@ -102,7 +141,7 @@
     html += '<section class="hero"><div class="wrap hero-grid"><div class="hero-text"><p class="eyebrow light">' + esc(P.role) + '</p><h1>' + esc(P.name) + '</h1>' +
       '<p class="tagline">' + esc(P.tagline) + '</p><p class="lead">' + esc(P.intro) + '</p>' +
       '<p class="actions"><a class="btn" href="portfolio.html">View portfolio</a><a class="btn ghost" href="cv.html">Curriculum vitae</a></p></div>' +
-      '<div class="hero-photo"><div class="ph-fallback">' + esc(P.initials) + '</div><img src="' + esc(P.photo) + '" alt="' + esc(P.name) + '" onerror="this.remove()"></div></div></section>';
+      slider('hero-photo') + '</div></section>';
     html += '<section class="stats"><div class="wrap stats-grid">' + P.stats.map(function (s) { return '<div><strong>' + esc(s.value) + '</strong><span>' + esc(s.label) + '</span></div>'; }).join('') + '</div></section>';
     html += sec('Selected work', 'Projects', '<div class="tiles">' + P.featured.map(byId).filter(Boolean).map(tile).join('') + '</div><p class="after"><a class="btn dark" href="portfolio.html">All ' + S.projects.length + ' projects</a></p>');
     html += sec('Expertise', 'What I work with', skillsBlock(), 'tint');
@@ -113,9 +152,9 @@
 
   if (page === 'about') {
     html += head('About', P.name, P.role + '  /  ' + P.location);
-    html += '<section class="sec"><div class="wrap about-grid"><div class="about-photo"><div class="ph-fallback">' + esc(P.initials) + '</div><img src="' + esc(P.photo) + '" alt="' + esc(P.name) + '" onerror="this.remove()"></div><div class="prose">' +
+    html += '<section class="sec"><div class="wrap about-grid">' + slider('about-photo') + '<div class="prose">' +
       P.about.map(function (t) { return '<p>' + esc(t) + '</p>'; }).join('') +
-      '<p class="actions"><a class="btn dark" href="cv.html">Curriculum vitae</a><a class="btn line" href="#contact">Contact</a></p>' + aboutPhotos() + '</div></div></section>';
+      '<p class="actions"><a class="btn dark" href="cv.html">Curriculum vitae</a><a class="btn line" href="#contact">Contact</a></p></div></div></section>';
     html += sec('Education', '', eduBlock(), 'tint');
     html += sec('Expertise', '', skillsBlock());
     html += sec('Awards', '', simpleRows(S.awards, 'title', 'detail', 'year'), 'tint');
@@ -180,6 +219,8 @@
       Array.prototype.forEach.call(document.querySelectorAll('.tiles .tile'), function (t) { t.style.display = (f === '*' || t.getAttribute('data-cat') === f) ? '' : 'none'; });
     });
   });
+
+  initSliders();
 
   /* ---------- lightbox ---------- */
   var lb = document.createElement('div'); lb.className = 'lightbox'; lb.innerHTML = '<button aria-label="Close">Close</button><img alt=""><p></p>'; document.body.appendChild(lb);
