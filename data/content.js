@@ -20,7 +20,7 @@ window.SITE = {
     tagline: "Industrial Steel & Concrete Structures  /  Seismic Evaluation & Strengthening  /  Foundations",
     location: "Surabaya, Indonesia",
     photo: "images/Cindrika02118.JPG",            // huruf besar/kecil nama file harus sama persis (.JPG ≠ .jpg)
-    heroImage: "images/projects/highrise-malang/6.jpg",
+    heroImage: "images/projects/highrise-malang/6.png",
     email: "cindycindrika@gmail.com",
     phone: "",                              // ISI (opsional): kosongkan bila tidak ingin nomor tampil di internet
     linkedin: "https://linkedin.com/in/cindrika",
@@ -29,11 +29,11 @@ window.SITE = {
     cvFile: "https://drive.google.com/drive/folders/1vPquKz5HTPZjRsznpA18ZKMG-t7m5kFk?usp=drive_link",                             // ISI: mis. "files/CV_Cindrika_Dwi_Pramudita.pdf" setelah PDF ditaruh di folder files/
     // 2-3 foto di halaman About, di bawah tombol Curriculum vitae & Contact. Simpan di folder images/about/
     aboutPhotos: [
-      { src: "ISI: images/about/1.JPEG", caption: "as a Speaker" },
-      { src: "ISI: images/about/2.jpg", caption: "Speaker Sertificate" },
-      { src: "ISI: images/about/3.PNG", caption: "IISMA Graduation" },
-      { src: "ISI: images/about/IMG_5130.HEIC", caption: "in UMKC School of Science and Engineering" },
-      { src: "ISI: images/about/IMG_9965.HEIC", caption: "in United States"
+      { src: "images/about/1.JPEG", caption: "as a Speaker" },
+      { src: "images/about/2.jpeg", caption: "Speaker Sertificate" },
+      { src: "images/about/3.PNG", caption: "IISMA Graduation" },
+      { src: "images/about/img_5130.jpg", caption: "in UMKC School of Science and Engineering" },
+      { src: "images/about/img_9965.jpg", caption: "in United States" }
     ],
 
     supportingDocs: "https://drive.google.com/drive/folders/1p4bm-Hf4gqD3ieiyAsyF3UH4AA-3F-gf?usp=drive_link",
@@ -117,7 +117,7 @@ window.SITE = {
       ],
       tools: ["ETABS", "ACI 350.3", "N-SPT / CPT"],
       images: [
-         { src: "images/projects/underground-wtp/29.jpg", caption: "3D Structural Modelling" }
+         { src: "images/projects/underground-wtp/29.png", caption: "3D Structural Modelling" }
       ]
     },
 
@@ -328,7 +328,7 @@ window.SITE = {
         { src: "images/projects/lng-jetty/10.png", caption: "Platform 3D Structural Modelling" },
         { src: "images/projects/lng-jetty/11.png", caption: "Jetty layout with dolphins and trestle CD" },
         { src: "images/projects/lng-jetty/12.png", caption: "Trestle detail CAD" },
-        { src: "images/projects/lng-jetty/12.png", caption: "Pile cap detail CAD" }
+        { src: "images/projects/lng-jetty/13.png", caption: "Pile cap detail CAD" }
       ]
     },
 
