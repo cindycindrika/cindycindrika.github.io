@@ -628,8 +628,8 @@ window.SITE = {
       location: "Kansas City, United States",
       period: "Aug 2024 – Dec 2024",
       points: [
-        "GPA 3.97 / 4.00; 12 US credits in Engineering Statics, Earth Climate & Geology, and cultural studies.",
-        "ASCE Associate Member; took part in technical discussions at the ASCE International Conference."
+        "GPA 3.97 / 4.00, took 12 US credits in Engineering Statics, Earth Climate & Geology, and cultural studies.",
+        "ASCE Associate Member: took part in technical discussions at the ASCE International Conference."
       ]
     }
   ],
