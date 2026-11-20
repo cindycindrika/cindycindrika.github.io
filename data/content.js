@@ -19,7 +19,7 @@ window.SITE = {
     role: "Civil Structural Engineer",
     tagline: "Industrial Steel & Concrete Structures  /  Seismic Evaluation & Strengthening  /  Foundations",
     location: "Surabaya, Indonesia",
-    photo: "images/Cindrika02118.JPG",            // huruf besar/kecil nama file harus sama persis (.JPG ≠ .jpg)
+    photo: "images/about/2.jpeg",            // huruf besar/kecil nama file harus sama persis (.JPG ≠ .jpg)
     heroImage: "images/projects/highrise-malang/6.png",
     email: "cindycindrika@gmail.com",
     phone: "",                              // ISI (opsional): kosongkan bila tidak ingin nomor tampil di internet
