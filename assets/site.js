@@ -95,7 +95,7 @@
     var arr = slidePhotos();
     var h = '<div class="' + cls + ' slider" data-n="' + arr.length + '"><div class="ph-fallback">' + esc(P.initials) + '</div>';
     arr.forEach(function (i, k) {
-      h += '<figure class="slide' + (k === 0 ? ' on' : '') + '"><img class="bg" src="' + esc(i.src) + '" alt="" aria-hidden="true"><img class="fg" src="' + esc(i.src) + '" alt="' + esc(i.caption || P.name) + '">' +
+      h += '<figure class="slide' + (k === 0 ? ' on' : '') + '"><img class="fg" src="' + esc(i.src) + '" alt="' + esc(i.caption || P.name) + '">' +
         (ok(i.caption) ? '<figcaption>' + esc(i.caption) + '</figcaption>' : '') + '</figure>';
     });
     if (arr.length > 1) {
