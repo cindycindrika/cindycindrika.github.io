@@ -30,8 +30,8 @@ window.SITE = {
     // 2-3 foto di halaman About, di bawah tombol Curriculum vitae & Contact. Simpan di folder images/about/
     aboutPhotos: [
       { src: "images/about/1.JPEG", caption: "as a Speaker" },
-      { src: "images/about/2.jpeg", caption: "Speaker Sertificate" },
-      { src: "images/about/3.PNG", caption: "IISMA Graduation" },
+      { src: "images/about/2.jpeg", caption: "IISMA Graduation" },
+      { src: "images/about/3.PNG", caption: "Speaker Sertificate" },
       { src: "images/about/img_5130.jpg", caption: "in UMKC School of Science and Engineering" },
       { src: "images/about/img_9965.jpg", caption: "in United States" }
     ],
