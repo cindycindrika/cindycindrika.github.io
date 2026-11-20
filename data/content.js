@@ -20,7 +20,7 @@ window.SITE = {
     tagline: "Industrial Steel & Concrete Structures  /  Seismic Evaluation & Strengthening  /  Foundations",
     location: "Surabaya, Indonesia",
     photo: "images/Cindrika02118.JPG",            // huruf besar/kecil nama file harus sama persis (.JPG ≠ .jpg)
-    heroImage: "images/projects/highrise-malang/01-3d-frame.jpg",
+    heroImage: "images/projects/highrise-malang/6.jpg",
     email: "cindycindrika@gmail.com",
     phone: "",                              // ISI (opsional): kosongkan bila tidak ingin nomor tampil di internet
     linkedin: "https://linkedin.com/in/cindrika",
@@ -36,12 +36,12 @@ window.SITE = {
 
     supportingDocs: "https://drive.google.com/drive/folders/1p4bm-Hf4gqD3ieiyAsyF3UH4AA-3F-gf?usp=drive_link",
 
-    intro: "I am a Civil and Structure Design Engineer, currently for industrial clients at PT Citra Karsa Dinamika, an EPCC contractor in Cikarang. My work runs from the ETABS model to the calculation report: buildings, pipe and cable bridges, tanks, equipment structures, and their foundations.",
+    intro: "I am a Civil Structural Design Engineer, currently for industrial clients at PT Citra Karsa Dinamika, an EPCC contractor in Cikarang. My work runs from the ETABS model to the calculation report: buildings, pipe and cable bridges, tanks, equipment structures, and their foundations.",
 
     about: [
       "I am a Cum Laude graduate of Applied Civil Engineering at Institut Teknologi Sepuluh Nopember (ITS) Surabaya, specializing in structural engineering. Since September 2026 I have worked as a Civil Structural Design Engineer at PT Citra Karsa Dinamika (CKD), where I design structures for active tenders and purchase orders, from modelling to reporting, for review by the engineering lead and the owner.",
       "My bachelor's thesis evaluated a five-story hospital building in Salatiga for a vertical expansion and designed its strengthening with inverted-V steel bracing and Carbon Fiber Reinforced Polymer (CFRP). Before that I interned at PT Wijaya Karya on a jetty project and at PT Studio Mineral Batubara on a mine disposal stability study.",
-      "Outside structural design I have a research background in water resources and IoT devices, a Scopus-indexed publication, and one semester at the University of Missouri-Kansas City as an IISMA exchange awardee."
+      "Outside structural design, I have a research background in water resources and IoT devices, a Scopus-indexed publication, and one semester at the University of Missouri-Kansas City as an IISMA exchange awardee."
     ],
 
     // Angka ringkas di halaman depan
@@ -66,7 +66,7 @@ window.SITE = {
 
     {
       id: "safran-batik",
-      title: "Batik Project: Building 2 Strengthening, Hazardous Building and Utility Cable Bridge",
+      title: "Batik Project: Building 2 Strengthening, Hazardous Building, and Utility Cable Bridge",
       category: "Design and Build Project",
       client: "Safran Electronics & Defense",
       location: "Purwakarta, Indonesia",
@@ -87,8 +87,12 @@ window.SITE = {
         "Caught a unit error in the consultant's CPT bearing capacity formula, raising the allowable bearing by 227% (48 to 157 kPa) and preventing oversized foundations."
       ],
       tools: ["ETABS", "IDEA StatiCa", "spColumn", "AISC 360", "AISC Design Guide 3"],
-      images: [
-        // ISI: contoh menambah gambar ->  { src: "images/projects/safran-batik/01-etabs-model.jpg", caption: "ETABS model of Building 2" },
+      images: [ 
+        { src: "images/projects/safran-batik/30.jpg", caption: "Warehouse Build 2 3D structural frame" },
+        { src: "images/projects/safran-batik/31.jpg", caption: "Hazardous Building 3D structural frame" },
+        { src: "images/projects/safran-batik/32.jpg", caption: "Cable Bridge 12 Length 3D structural frame" },
+        { src: "images/projects/safran-batik/33.jpg", caption: "Cable Bridge 6,5 Length structural frame" },
+        { src: "images/projects/safran-batik/34.jpg", caption: "Canopy structural frame" },
       ]
     },
 
@@ -110,7 +114,9 @@ window.SITE = {
         "Designed the retaining walls, tank reinforcement, and pile caps, including the total service weight."
       ],
       tools: ["ETABS", "ACI 350.3", "N-SPT / CPT"],
-      images: []
+      images: [
+         { src: "images/projects/underground-wtp/29.jpg", caption: "3D Structural Modelling" }
+      ]
     },
 
     {
@@ -131,7 +137,9 @@ window.SITE = {
         "Applied the boiler and ESP equipment loads and ran the structural analysis that supports the design."
       ],
       tools: ["ETABS"],
-      images: []
+      images: [ 
+         { src: "images/projects/goodyear-boiler-house/28.jpg", caption: "3D Structural Modelling" }
+      ]
     },
 
     {
@@ -151,7 +159,10 @@ window.SITE = {
         "Compared steel weight and member ratios; the selected option was 15% lighter in roof steel."
       ],
       tools: ["ETABS"],
-      images: []
+      images: [
+         { src: "images/projects/kdf-building-47/26.jpg", caption: "Honeycomb Alternatives 3D Structural Modelling" },
+         { src: "images/projects/kdf-building-47/27.jpg", caption: "Cremona Alternatives 3D Structural Modelling" }
+      ]
     },
 
     {
@@ -171,7 +182,9 @@ window.SITE = {
         "Designed the lift pit retaining walls for soil pressure and stability."
       ],
       tools: ["ETABS"],
-      images: []
+      images: [
+         { src: "images/projects/beiersdorf-cargo-lift/25.jpg", caption: "Platform 3D Structural Modelling" }
+         ]
     },
 
     {
@@ -215,7 +228,14 @@ window.SITE = {
         "Produced the deliverables of an EPC package: structural drawings, work method statement, bill of quantities, unit price analysis, budget, and schedule."
       ],
       tools: ["ETABS", "SNI 1726:2019"],
-      images: []
+      images: [
+         { src: "images/projects/hospital-strengthening/19.jpg", caption: "Upper and Lower Structure in 3D Structural Modelling" },
+         { src: "images/projects/hospital-strengthening/20.jpg", caption: "Upper Structure 3D Structural Modelling" },
+         { src: "images/projects/hospital-strengthening/21.jpg", caption: "Strengthening Plan CAD" },
+         { src: "images/projects/hospital-strengthening/22.jpg", caption: "CFRP Strengthening Plan CAD" },
+         { src: "images/projects/hospital-strengthening/23.jpg", caption: "Bracing Detail CAD" },
+         { src: "images/projects/hospital-strengthening/24.jpg", caption: "Bracing Detail CAD" }
+         ]
     },
 
     {
@@ -242,10 +262,11 @@ window.SITE = {
       ],
       tools: ["ETABS", "IDEA StatiCa", "AutoCAD", "SNI 1726:2019", "SNI 2847:2019", "SNI 1729:2020"],
       images: [
-        { src: "images/projects/office-gresik/01-section.jpg", caption: "Building section" },
-        { src: "images/projects/office-gresik/02-floor-plan.jpg", caption: "Floor plan" },
-        { src: "images/projects/office-gresik/03-connection-details.jpg", caption: "Connection and reinforcement details" },
-        { src: "images/projects/office-gresik/04-roof-frame.jpg", caption: "Steel roof frame and details" }
+        { src: "images/projects/office-gresik/14.jpg", caption: "3D Structure Modelling" },
+        { src: "images/projects/office-gresik/15.jpg", caption: "Portal Building section CAD" },
+        { src: "images/projects/office-gresik/16.jpg", caption: "Floor Plan CAD" },
+        { src: "images/projects/office-gresik/17.jpg", caption: "Connection and reinforcement details CAD" },
+        { src: "images/projects/office-gresik/18.jpg", caption: "Steel roof frame and details CAD" }
       ]
     },
 
@@ -272,9 +293,9 @@ window.SITE = {
       ],
       tools: ["ETABS", "AutoCAD", "SNI 1726:2019", "SNI 1727:2020"],
       images: [
-        { src: "images/projects/highrise-malang/01-3d-frame.jpg", caption: "3D structural frame" },
-        { src: "images/projects/highrise-malang/02-elevation.jpg", caption: "Braced frame elevation" },
-        { src: "images/projects/highrise-malang/03-bracing-connection.jpg", caption: "Bracing connection detail" }
+        { src: "images/projects/highrise-malang/6.jpg", caption: "3D structural frame" },
+        { src: "images/projects/highrise-malang/7.jpg", caption: "Braced frame 3D in CAD" },
+        { src: "images/projects/highrise-malang/8.jpg", caption: "Bracing connection detail" }
       ]
     },
 
@@ -301,10 +322,11 @@ window.SITE = {
       ],
       tools: ["SAP2000", "AutoCAD"],
       images: [
-        { src: "images/projects/lng-jetty/01-layout.jpg", caption: "Jetty layout with dolphins and trestle" },
-        { src: "images/projects/lng-jetty/02-platform-section.jpg", caption: "Loading platform section" },
-        { src: "images/projects/lng-jetty/03-mooring-dolphin.jpg", caption: "Dolphin with fender and bollard" },
-        { src: "images/projects/lng-jetty/04-pile-cap-detail.jpg", caption: "Pile cap detail" }
+        { src: "images/projects/lng-jetty/9.jpg", caption: "Trestle 3D Structural Modelling" },
+        { src: "images/projects/lng-jetty/10.jpg", caption: "Platform 3D Structural Modelling" },
+        { src: "images/projects/lng-jetty/11.jpg", caption: "Jetty layout with dolphins and trestle CD" },
+        { src: "images/projects/lng-jetty/12.jpg", caption: "Trestle detail CAD" },
+        { src: "images/projects/lng-jetty/12.jpg", caption: "Pile cap detail CAD" }
       ]
     },
 
@@ -331,10 +353,8 @@ window.SITE = {
       ],
       tools: ["SAP2000", "SketchUp", "SNI 1725:2016", "SNI 2833:2016"],
       images: [
-        { src: "images/projects/arch-bridge/01-sap2000-model.jpg", caption: "SAP2000 model" },
-        { src: "images/projects/arch-bridge/02-extruded-model.jpg", caption: "Extruded member view" },
-        { src: "images/projects/arch-bridge/03-elevation.jpg", caption: "Elevation" },
-        { src: "images/projects/arch-bridge/04-3d-view.jpg", caption: "3D view" }
+        { src: "images/projects/arch-bridge/4.jpg", caption: "SAP2000 model" },
+        { src: "images/projects/arch-bridge/5.jpg", caption: "Extruded member view" }
       ]
     },
 
@@ -361,10 +381,9 @@ window.SITE = {
       ],
       tools: ["ETABS", "AutoCAD", "SNI 2847:2019"],
       images: [
-        { src: "images/projects/cfrp-office/01-elevation.jpg", caption: "Building elevation" },
-        { src: "images/projects/cfrp-office/02-floor-plan.jpg", caption: "Floor plan" },
-        { src: "images/projects/cfrp-office/03-strengthening-plan.jpg", caption: "Strengthening layout" },
-        { src: "images/projects/cfrp-office/04-cfrp-detail.jpg", caption: "CFRP strengthening details" }
+        { src: "images/projects/cfrp-office/1.jpg", caption: "3D Structural Modelling" },
+        { src: "images/projects/cfrp-office/2.jpg", caption: "CFRP strengthening details" },
+        { src: "images/projects/cfrp-office/3.jpg", caption: "Strengthening layout" }
       ]
     },
 
