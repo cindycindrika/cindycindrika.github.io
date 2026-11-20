@@ -29,9 +29,11 @@ window.SITE = {
     cvFile: "https://drive.google.com/drive/folders/1vPquKz5HTPZjRsznpA18ZKMG-t7m5kFk?usp=drive_link",                             // ISI: mis. "files/CV_Cindrika_Dwi_Pramudita.pdf" setelah PDF ditaruh di folder files/
     // 2-3 foto di halaman About, di bawah tombol Curriculum vitae & Contact. Simpan di folder images/about/
     aboutPhotos: [
-      { src: "ISI: images/about/foto1.jpg", caption: "" },
-      { src: "ISI: images/about/foto2.jpg", caption: "" },
-      { src: "ISI: images/about/foto3.jpg", caption: "" }
+      { src: "ISI: images/about/1.JPEG", caption: "as a Speaker" },
+      { src: "ISI: images/about/2.jpg", caption: "Speaker Sertificate" },
+      { src: "ISI: images/about/3.PNG", caption: "IISMA Graduation" },
+      { src: "ISI: images/about/IMG_5130.HEIC", caption: "in UMKC School of Science and Engineering" },
+      { src: "ISI: images/about/IMG_9965.HEIC", caption: "in United States"
     ],
 
     supportingDocs: "https://drive.google.com/drive/folders/1p4bm-Hf4gqD3ieiyAsyF3UH4AA-3F-gf?usp=drive_link",
@@ -88,11 +90,11 @@ window.SITE = {
       ],
       tools: ["ETABS", "IDEA StatiCa", "spColumn", "AISC 360", "AISC Design Guide 3"],
       images: [ 
-        { src: "images/projects/safran-batik/30.jpg", caption: "Warehouse Build 2 3D structural frame" },
-        { src: "images/projects/safran-batik/31.jpg", caption: "Hazardous Building 3D structural frame" },
-        { src: "images/projects/safran-batik/32.jpg", caption: "Cable Bridge 12 Length 3D structural frame" },
-        { src: "images/projects/safran-batik/33.jpg", caption: "Cable Bridge 6,5 Length structural frame" },
-        { src: "images/projects/safran-batik/34.jpg", caption: "Canopy structural frame" },
+        { src: "images/projects/safran-batik/30.png", caption: "Warehouse Build 2 3D structural frame" },
+        { src: "images/projects/safran-batik/31.png", caption: "Hazardous Building 3D structural frame" },
+        { src: "images/projects/safran-batik/32.png", caption: "Cable Bridge 12 Length 3D structural frame" },
+        { src: "images/projects/safran-batik/33.png", caption: "Cable Bridge 6,5 Length structural frame" },
+        { src: "images/projects/safran-batik/34.png", caption: "Canopy structural frame" },
       ]
     },
 
@@ -138,7 +140,7 @@ window.SITE = {
       ],
       tools: ["ETABS"],
       images: [ 
-         { src: "images/projects/goodyear-boiler-house/28.jpg", caption: "3D Structural Modelling" }
+         { src: "images/projects/goodyear-boiler-house/28.png", caption: "3D Structural Modelling" }
       ]
     },
 
@@ -160,8 +162,8 @@ window.SITE = {
       ],
       tools: ["ETABS"],
       images: [
-         { src: "images/projects/kdf-building-47/26.jpg", caption: "Honeycomb Alternatives 3D Structural Modelling" },
-         { src: "images/projects/kdf-building-47/27.jpg", caption: "Cremona Alternatives 3D Structural Modelling" }
+         { src: "images/projects/kdf-building-47/26.png", caption: "Honeycomb Alternatives 3D Structural Modelling" },
+         { src: "images/projects/kdf-building-47/27.png", caption: "Cremona Alternatives 3D Structural Modelling" }
       ]
     },
 
@@ -183,7 +185,7 @@ window.SITE = {
       ],
       tools: ["ETABS"],
       images: [
-         { src: "images/projects/beiersdorf-cargo-lift/25.jpg", caption: "Platform 3D Structural Modelling" }
+         { src: "images/projects/beiersdorf-cargo-lift/25.png", caption: "Platform 3D Structural Modelling" }
          ]
     },
 
@@ -229,12 +231,12 @@ window.SITE = {
       ],
       tools: ["ETABS", "SNI 1726:2019"],
       images: [
-         { src: "images/projects/hospital-strengthening/19.jpg", caption: "Upper and Lower Structure in 3D Structural Modelling" },
-         { src: "images/projects/hospital-strengthening/20.jpg", caption: "Upper Structure 3D Structural Modelling" },
-         { src: "images/projects/hospital-strengthening/21.jpg", caption: "Strengthening Plan CAD" },
-         { src: "images/projects/hospital-strengthening/22.jpg", caption: "CFRP Strengthening Plan CAD" },
-         { src: "images/projects/hospital-strengthening/23.jpg", caption: "Bracing Detail CAD" },
-         { src: "images/projects/hospital-strengthening/24.jpg", caption: "Bracing Detail CAD" }
+         { src: "images/projects/hospital-strengthening/19.png", caption: "Upper and Lower Structure in 3D Structural Modelling" },
+         { src: "images/projects/hospital-strengthening/20.png", caption: "Upper Structure 3D Structural Modelling" },
+         { src: "images/projects/hospital-strengthening/21.png", caption: "Strengthening Plan CAD" },
+         { src: "images/projects/hospital-strengthening/22.png", caption: "CFRP Strengthening Plan CAD" },
+         { src: "images/projects/hospital-strengthening/23.png", caption: "Bracing Detail CAD" },
+         { src: "images/projects/hospital-strengthening/24.png", caption: "Bracing Detail CAD" }
          ]
     },
 
@@ -262,11 +264,11 @@ window.SITE = {
       ],
       tools: ["ETABS", "IDEA StatiCa", "AutoCAD", "SNI 1726:2019", "SNI 2847:2019", "SNI 1729:2020"],
       images: [
-        { src: "images/projects/office-gresik/14.jpg", caption: "3D Structure Modelling" },
-        { src: "images/projects/office-gresik/15.jpg", caption: "Portal Building section CAD" },
-        { src: "images/projects/office-gresik/16.jpg", caption: "Floor Plan CAD" },
-        { src: "images/projects/office-gresik/17.jpg", caption: "Connection and reinforcement details CAD" },
-        { src: "images/projects/office-gresik/18.jpg", caption: "Steel roof frame and details CAD" }
+        { src: "images/projects/office-gresik/14.png", caption: "3D Structure Modelling" },
+        { src: "images/projects/office-gresik/15.png", caption: "Portal Building section CAD" },
+        { src: "images/projects/office-gresik/16.png", caption: "Floor Plan CAD" },
+        { src: "images/projects/office-gresik/17.png", caption: "Connection and reinforcement details CAD" },
+        { src: "images/projects/office-gresik/18.png", caption: "Steel roof frame and details CAD" }
       ]
     },
 
@@ -293,9 +295,9 @@ window.SITE = {
       ],
       tools: ["ETABS", "AutoCAD", "SNI 1726:2019", "SNI 1727:2020"],
       images: [
-        { src: "images/projects/highrise-malang/6.jpg", caption: "3D structural frame" },
-        { src: "images/projects/highrise-malang/7.jpg", caption: "Braced frame 3D in CAD" },
-        { src: "images/projects/highrise-malang/8.jpg", caption: "Bracing connection detail" }
+        { src: "images/projects/highrise-malang/6.png", caption: "3D structural frame" },
+        { src: "images/projects/highrise-malang/7.png", caption: "Braced frame 3D in CAD" },
+        { src: "images/projects/highrise-malang/8.png", caption: "Bracing connection detail" }
       ]
     },
 
@@ -322,11 +324,11 @@ window.SITE = {
       ],
       tools: ["SAP2000", "AutoCAD"],
       images: [
-        { src: "images/projects/lng-jetty/9.jpg", caption: "Trestle 3D Structural Modelling" },
-        { src: "images/projects/lng-jetty/10.jpg", caption: "Platform 3D Structural Modelling" },
-        { src: "images/projects/lng-jetty/11.jpg", caption: "Jetty layout with dolphins and trestle CD" },
-        { src: "images/projects/lng-jetty/12.jpg", caption: "Trestle detail CAD" },
-        { src: "images/projects/lng-jetty/12.jpg", caption: "Pile cap detail CAD" }
+        { src: "images/projects/lng-jetty/9.png", caption: "Trestle 3D Structural Modelling" },
+        { src: "images/projects/lng-jetty/10.png", caption: "Platform 3D Structural Modelling" },
+        { src: "images/projects/lng-jetty/11.png", caption: "Jetty layout with dolphins and trestle CD" },
+        { src: "images/projects/lng-jetty/12.png", caption: "Trestle detail CAD" },
+        { src: "images/projects/lng-jetty/12.png", caption: "Pile cap detail CAD" }
       ]
     },
 
@@ -353,8 +355,8 @@ window.SITE = {
       ],
       tools: ["SAP2000", "SketchUp", "SNI 1725:2016", "SNI 2833:2016"],
       images: [
-        { src: "images/projects/arch-bridge/4.jpg", caption: "SAP2000 model" },
-        { src: "images/projects/arch-bridge/5.jpg", caption: "Extruded member view" }
+        { src: "images/projects/arch-bridge/4.png", caption: "SAP2000 model" },
+        { src: "images/projects/arch-bridge/5.png", caption: "Extruded member view" }
       ]
     },
 
@@ -381,9 +383,9 @@ window.SITE = {
       ],
       tools: ["ETABS", "AutoCAD", "SNI 2847:2019"],
       images: [
-        { src: "images/projects/cfrp-office/1.jpg", caption: "3D Structural Modelling" },
-        { src: "images/projects/cfrp-office/2.jpg", caption: "CFRP strengthening details" },
-        { src: "images/projects/cfrp-office/3.jpg", caption: "Strengthening layout" }
+        { src: "images/projects/cfrp-office/1.png", caption: "3D Structural Modelling" },
+        { src: "images/projects/cfrp-office/2.png", caption: "CFRP strengthening details" },
+        { src: "images/projects/cfrp-office/3.png", caption: "Strengthening layout" }
       ]
     },
 
